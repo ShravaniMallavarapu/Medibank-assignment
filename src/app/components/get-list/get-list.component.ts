@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import {Http} from '@angular/http';
+import { Component, OnInit } from '@angular/core'
+import {Http} from '@angular/http'
 
 @Component({
   selector: 'app-get-list',
