@@ -1,0 +1,25 @@
+<div class="cats-list">
+    <h1>Grouping cats list based on their owner's gender</h1>
+    <div *ngIf="catsList.length > 0; else noPets">
+        <p><b>Male</b></p>
+        <div *ngFor= "let male of maleCatsList">
+            <ul>
+                <li>
+                    {{male}}
+                </li>
+            </ul>
+        </div>
+        <p><b>Female</b></p>
+        <div  *ngFor= "let female of femaleCatsList">
+            <ul>
+                <li>
+                    {{female}}
+                </li>
+            </ul>
+        </div>
+    </div>
+    <ng-template #noPets>
+        <p>There are no pets for any one here!</p>
+    </ng-template>
+   
+</div>
