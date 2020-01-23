@@ -36,7 +36,7 @@ export class GetListComponent implements OnInit {
               }
             })
           })
-          this.maleCatsList.sort(function(cat1,cat2) {
+          this.maleCatsList.sort(function(cat1,cat2) { //Sorting alphabetically
             if (cat1 < cat2) return -1;
             if (cat1 > cat2) return 1;
             return 0;
